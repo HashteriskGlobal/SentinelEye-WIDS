@@ -4,6 +4,25 @@ The 'Sentinel Eye' system vigilantly monitors wireless network environments to d
 
 ![Sentinel eye](/assets/seye.jpeg)
 
+## Table of Contents
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation Instructions](#installation)
+- [Usage Guide](#usage)
+- [Configuration](#configuration)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [Disclaimer](#Security-disclaimer)
+- [Authors and Acknowledgments](#authors)
+- [License](#license)
+
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+- An ESP8266 microcontroller.
+- Arduino IDE installed on your computer.
+- The latest version of Python if you're using the telegram_bot.
+- Basic understanding of microcontroller programming and Python scripting.
+
 ## Project Structure
 
 ```
@@ -25,6 +44,13 @@ SentinelEye-WIDS
 
 ## Features
 
+- Attack Tools : Includes handshake capture, brute forcing, and
+WPS attacking.
+- Detection Methods : Monitor packet rates, alert users, and use
+Arduino.
+- Cloud Integration : Utilizes cloud-based services for real-time
+attack detection.
+
 ### ESP8266 Intrusion Detection
 
 - Real-time monitoring of Wi-Fi channels for deauthentication packets
@@ -37,6 +63,10 @@ SentinelEye-WIDS
 - Detailed guidance on immediate steps to take upon a Wi-Fi attack
 - Information on common Wi-Fi attacks, prevention tips, and how to respond
 - An interactive and user-friendly interface to enhance user awareness
+
+## Getting Started
+1. Gather all the required components listed in the prerequisites section.
+2. Follow the detailed installation instructions to set up the hardware and software components.
 
 ## Installation
 ### ESP8266 Intrusion Detection Setup
@@ -126,12 +156,33 @@ For further assistance, please refer to the instructions within the respective c
 ## Contributing
 We welcome contributions and suggestions to improve the SentinelEye-WIDS project. Please feel free to submit issues and pull requests through the project's GitHub repository.
 
+## Troubleshooting
+If you experience any issues while setting up or operating the SentinelEye-WIDS, please refer to the troubleshooting guide below:
+- If the ESP8266 fails to connect to Wi-Fi, make sure you have entered the correct credentials and that your Wi-Fi network is operational.
+- In case of failed Pushover notifications, verify your API and User tokens.
+
+## Security Disclaimer
+While SentinelEye-WIDS is designed to enhance the security of wireless networks, it does not guarantee complete protection against all types of Wi-Fi attacks. Users are encouraged to employ multiple layers of security and to keep all software up-to-date.
+
+## FAQ
+**Q: Can I use SentinelEye-WIDS with any Wi-Fi network?**
+A: SentinelEye-WIDS is compatible with networks that the ESP8266 supports. For specific network requirements, refer to the ESP8266 documentation.
+
+**Q: What kind of attacks can SentinelEye-WIDS detect?**
+A: The system is designed to detect deauthentication attacks by monitoring suspicious packet patterns often associated with such intrusions.
+
+## Support and New Features
+For support queries or to suggest new features, please file an issue on the GitHub repository, and we will get back to you as soon as possible.
+
+## Contact Information
+For assistance or to provide feedback, reach out to us at [contact@hashteriskglobal.com](mailto:contact@hashteriskglobal.com).
+
 ### Versioning
 We use SemVer for versioning. For the versions available, see the tags on this repository.
 
 ### Authors
 
-- Sarath K - Initial work - [sarathk73](https://github.com/sarathk73)
+- [Hashterisk Global](https://www.hashteriskglobal.com/)
 
 ### License
 
@@ -139,5 +190,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Thank you for choosing SentinelEye-WIDS to secure your wireless network environment.
-
+Thank you for choosing SentinelEye-WIDS. Your feedback helps us improve and provide a more secure networking experience
